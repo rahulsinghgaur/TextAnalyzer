@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rahul</title>
+</head>
+<body>
+<center><h1>Welcome to text analyazer</h1></center>
+<form action='/analyzeText' method="post"> {% csrf_token %}
+    <h3>Enter Your Text Here</h3>
+
+  <textarea name="textarea" style="margin: 0px; width: 1495px; height: 131px;"> </textarea>
+    <input type="checkbox" name="checkbox">Remove Punctuations<br>
+    <input type="checkbox" name="capital">Convert To Upper Case<br>
+    <input type="checkbox" name="spaceremover">Remove Extra Space<br>
+    <button type="submit">Analyze Text</button>
+
+
+
+</form>
+</body>
+</html>
